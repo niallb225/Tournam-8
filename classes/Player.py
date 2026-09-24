@@ -1,8 +1,12 @@
 class Player:
-    def __init__(self, name, seed):
+    def __init__(self, index, name, seed):
+        self.index = index
         self.name = name
         self.score = 0
         self.seed = seed
+    
+    def getIndex(self):
+        return self.index
 
     def getName(self):
         return self.name
@@ -12,6 +16,9 @@ class Player:
     
     def getSeed(self):
         return self.seed
+    
+    def setIndex(self, index):
+        self.index = index
     
     def setName(self, name):
         self.name = name
